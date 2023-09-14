@@ -1,25 +1,33 @@
 //Global Variables
 int appWidth, appHeight;
+Boolean windowActivated = false;
 //
 void setup() {
-  size(500, 600);
+  size(2000, 2000);
   //fullscreen(); //displayWidth, displayHeight
   //OPTION: Use display width and height instead.
   appWidth = width;
-  appHeight: height:
+  appHeight = height;
   println("Display Width", displayWidth, "Display Height", displayHeight);
   println("App Width", appWidth, "App Height", appHeight);
   //
   //Problem: Display < Canvas
   if (appWidth > displayWidth) appWidth=displayWidth;
   if (appHeight > displayHeight) appHeight=displayHeight;
+  println(appWidth, appHeight);
+  //Note: arithmetic will be solved but nit the CANVAS size.
+  //Solution:  requires different function, note size(), i.e. fullScreen()
   //
-  
 } //End Setup
 //
-void draw() {} //End Draw
+void draw() {
+  if () splashScreen(windowActivated == true);
+} //End Draw
 //
-void mousePressed() {} //End mousePressed
+void mousePressed() {
+  //first mouse click, activate window
+  windowActivated = true;
+} //End mousePressed
 //
 void keyPressed() {} //End keyPressed
 //
