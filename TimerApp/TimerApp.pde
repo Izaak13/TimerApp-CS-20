@@ -21,7 +21,7 @@ void setup() {
 } //End Setup
 //
 void draw() {
-  if () splashScreen(windowActivated == true);
+  if ( windowActivated == true ) splashScreen();
 } //End Draw
 //
 void mousePressed() {
